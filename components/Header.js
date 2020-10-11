@@ -28,11 +28,12 @@ function Header() {
     temp.innerHTML = "98&deg";
 
     //Append Elements
-    header.appendChild('date');
-    header.appendChild('title');
-    header.appendChild('temp');
+    header.appendChild(date);
+    header.appendChild(title);
+    header.appendChild(temp);
+    container.appendChild(header)
 
-    return header;
+    return container;
 }
-container.appendChild(Header()); 
+Header();
 
